@@ -1,0 +1,719 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	background: #454545;
+	padding-left: 5%;
+	padding-right: 3%;
+	font-family: 'josefin Sans', sans-serif;
+	font-size: 22px;
+	
+	line-height: 26px;
+	text-align: justify;
+	
+}
+/*=====================Script for positioning the overlaid logo===================================*/
+.logo {
+	
+	 position: absolute;
+    top: 0;
+    left: 0;
+    width: 415px;
+    height: 120px;
+   
+	background: url('images/logo.png');
+}
+	
+/*======================Code fof the header containing the fb  and twitter button */
+}
+header {
+	padding-right: 1%;
+	padding-top: -5%;
+	height: auto;
+	text-align: center;
+	width: 100%;
+	
+}
+
+p {
+	text-indent: 5%; /*This creates space after the begining of every paragraph*/
+	
+}
+h2 {
+	text-align: center;
+	line-height:v125%;
+	
+	
+}
+/*=================Start of Header Navigation===================*/
+header img{
+		width: 30;
+		height: 30;
+		
+}
+header nav{
+	
+	width: 100%;
+	margin: 1% auto;
+	overflow: hidden;
+
+
+	}
+	header nav ul{
+		
+		list-style: none;
+		overflow: hidden;
+				
+		}
+		header nav li a{
+			
+			background: none;
+			border-right: 1px solid #454545;
+			color: #FAFAFA;
+			display: block;
+			float: right;
+			font-size: 30%;
+			font-weight: 600;
+			padding: 0%;
+			text-align: center;
+			text-decoration: none;
+			width: 8.65%;
+			transition: background 0.5s ease;
+			
+		}
+/*                         ENd of Code for header Navigation  								*/
+
+
+	/* The  following is to change the color of the hover effect */
+			header nav li a:hover, header nav li.active a {
+				background: #DADADA;
+				color: #454545;
+	
+			}
+				header nav li: last-child a{
+	
+				border: none;
+						}
+/*================================================Side Push Navigation Menu========================================*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav ul{
+	
+	margin: 0;
+padding: 0;
+width:185px;
+list-style-type: none;
+}
+.sidenav ul li a{
+	
+	text-decoration: none;
+color: white;
+padding: 10.5px 11px;
+background-color: none;
+display:block;
+}
+.sidenav ul li a:visited {
+color: white;
+}
+.sidenav ul li a:hover, .sidenav ul li .current {
+color: white;
+background-color: red;
+}
+.sidenav a {
+	
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+	-webkit-transition-property: color;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-property: color;
+  -moz-transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-property: color;
+  -ms-transition-duration: 0.1s;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-property: color;
+  -o-transition-duration: 0.1s;
+  -o-transition-timing-function: ease-out;
+  transition-property: color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  direction: ltr;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav img {
+	width: 150px;
+	height: 150px;
+	
+	
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav img {
+	width: 120px;
+	height: 120px;
+	
+	
+}
+
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*====================================================End of SIde bar menu=======================================*/
+
+
+/*=====================Start of Main navigation code===========================*/
+nav {
+	
+	width:100%;
+	margin: 1% auto;
+	overflow:hidden;
+	background: #454545;
+	opacity: 0.8;
+	}
+nav ul{
+	/*position: relative;*/
+	/*left: 500px;*/
+	list-style: none;
+	overflow: hidden;
+	}
+nav li a {
+	
+	background: none;
+	border-right: 1px solid #454545;
+	color: #E8E8FF;
+	display: block;
+	float: right;
+	font-size: 90%;
+	font-weight: 600;
+	padding: 1%;
+	text-align: left;
+	text-decoration: none;
+	width: 10.65%;
+	transition: background 0.5s ease;
+	
+}
+/* The  following is to change the color of the hover effect */
+nav li a:hover, nav li.active a {
+	background: #DADADA;
+				color: #454545;
+}
+nav li: last-child a{
+	
+	border: none;
+}
+/*==================End of Navigation=====================*/
+/*======================Start of footer links==================================*/
+
+footer nav{
+	
+	width: 100%;
+	margin: 1% auto;
+	overflow: hidden;
+
+
+	}
+	footer nav ul{
+		
+		list-style: none;
+		overflow: hidden;
+				
+		}
+		footer nav li a{
+			
+			background: none;
+			border-right: 1px solid #454545;
+			color: #FAFAFA;
+			display: block;
+			float: right;
+			font-size: 60%;
+			font-weight: 600;
+			padding: 1%;
+			text-align: center;
+			text-decoration: none;
+			width: 6.65%;
+			transition: background 0.5s ease;
+			
+		}
+	/* The  following is to change the color of the hover effect */
+			footer nav li a:hover, header nav li.active a {
+				background: #DADADA;
+				color: #454545;
+	
+			}
+				footer nav li: last-child a{
+	
+				border: none;
+						}
+.bottom {
+	
+	  border-top-width:2px;
+   border-top-color:White;
+   
+   border-top-style: solid;
+	
+}
+/*==========================End of Footer links================================*/
+.banner {
+width: 100%;
+
+ }
+.main {
+	
+	height: 740px;
+	width: 100%;
+background-image: url('images/header.gif');
+	
+	
+	
+}
+	.banner img {
+		width: 100%; /* important*/
+		height: auto;
+		background-repeat: no-repeat;
+    background-size: contain;
+		
+	}
+
+footer {
+	float: left;
+	width: 100%;
+	padding: 2%;
+	margin: 1% 0;
+	;
+	
+}
+footer p{ 
+
+    font-size: 14.3px;
+    
+
+}
+.fb-follow{
+	
+	
+	width:50%
+}
+
+
+
+/*========================Main body images=======================*/
+#wrapper {
+  width: 100%;;
+  margin: 60px auto 60px auto;
+  background-color: #DDD
+}
+#outer {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+ border-width: 2px;
+  
+}
+.itemwrapper {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  
+   border-bottom-width:2px;
+   border-bottom-color:White;
+   border-right-color: White;
+   border-right-width:2px;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   
+}
+.itemwrapper7 {
+ /* display: table-cell;
+  vertical-align: top;*/
+ 
+
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  
+   border-bottom-width:2px;
+   border-bottom-color:White;
+   border-right-color: White;
+   border-right-width:2px;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   
+}
+ 
+}
+/*=============================Button Links on Images================================================*/
+
+.button {
+	
+  border-radius: 4px;
+  background-color: none;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*=======This code makes the image responsive to any div size=====*/
+img {
+  width: 100%;
+  height: auto;
+}
+/*========================Media Queries==========================*/
+/*Ipad width and tablet */
+@media only screen and (max-width: 700px) {
+	
+	nav{
+	margine: 2% auto;	
+	}
+	nav li a {
+		
+		width: 33.3%;
+		font-size: 90%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	nav li:nth-child(3) a {
+		border-right: none;
+		
+	}
+	
+	header nav{
+	margine: 2% auto;	
+	}
+	header nav li a {
+		
+		width: 7.3%;
+		font-size: 25%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	header nav li:nth-child(3) a {
+		border-right: none;
+		
+	}
+	
+	footer nav{
+	margine: 2% auto;	
+	}
+	footer nav li a {
+		
+		width: 9.3%;
+		font-size: 25%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	footer nav li:nth-child(3) a {
+		border-right: none;
+		
+	}
+	
+	
+	h2 {
+		
+		font-size: 105%;
+	}
+	p {
+		
+		
+	}
+	footer p{ 
+
+    font-size: 10%;
+    
+
+}
+
+
+#sidebar-menu {
+  top: 0px;
+  width: 100%;
+}
+
+#sidebar-menu li { border-bottom: 1px solid rgba(238, 238, 238, 0.05); }
+
+#sidebar-menu a {
+  text-decoration: none;
+  color: #595959;
+  border-bottom: 1px solid white;
+}
+
+#sidebar-menu a:hover {
+  text-decoration: none;
+  color: #595959;
+}
+	.logo {
+	 display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;     
+	 position: absolute;
+    top: 0;
+    left: 0;
+    width: 207px;
+    height: 60px;
+   
+	background: url('images/logo.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+}
+@media only screen and (max-width: 580px) {
+	
+	.main {
+	
+	
+	width: 100%;
+background-image: url('images/header.gif');
+	
+	
+	
+}
+	
+		nav{
+	margine: 2% auto;	
+	}
+	nav li a {
+		
+		width: 33.3%;
+		font-size: 70%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	nav li:nth-child(4) a {
+		border-right: none;
+		
+	}
+	
+	header nav{
+	margine: 2% auto;	
+	}
+	header nav li a {
+		
+		width: 7.3%;
+		font-size: 25%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	header nav li:nth-child(3) a {
+		border-right: none;
+		
+	}
+	
+	footer nav{
+	margine: 2% auto;	
+	}
+	footer nav li a {
+		
+		width: 8.3%;
+		font-size: 25%;
+		padding-top: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	footer nav li:nth-child(3) a {
+		border-right: none;
+		
+	}
+	
+	
+	h2 {
+		
+		font-size: 105%;
+	}
+	p {
+		
+		
+	}
+	footer p{ 
+
+    font-size: 7px;
+    
+
+}
+
+
+#sidebar-menu {
+  top: 0px;
+  width: 100%;
+}
+
+#sidebar-menu li { border-bottom: 1px solid rgba(238, 238, 238, 0.05); }
+
+#sidebar-menu a {
+  text-decoration: none;
+  color: #595959;
+}
+
+#sidebar-menu a:hover {
+  text-decoration: none;
+  color: #595959;
+}
+	.logo {
+	 display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;     
+	 position: absolute;
+    top: 0;
+    left: 0;
+    width: 207px;
+    height: 60px;
+   
+	background: url('images/logo.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+	}
+	
+	
+	
+	h2 {
+		
+		font-size: 95%;
+	}
+	p {
+		
+		font-size: 88%;
+	}
+}
+}
+/*========================================Hover over images==============================*/
+
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.itemwrapper:hover .image {
+  opacity: 0.3;
+}
+
+.itemwrapper:hover .middle {
+  opacity: 1;
+}
+.itemwrapper7:hover .image {
+  opacity: 0.3;
+}
+
+.itemwrapper7:hover .middle {
+  opacity: 1;
+}
+
+.text {
+	text-decoration none;
+  background-color: none;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text a{
+
+text-decoration none;
+}
+
+/*==================================Code to play video==================================*/
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
